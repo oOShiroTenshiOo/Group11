@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+		<div class="container">
+		<div class="row" ng-app="main" ng-controller="carController">
+			<h1 align="center">กรอกหมายเลขทะเบียนรถ</h1> <br/>
+
+
+		   <div class="container">
+		    <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		</div>
+		    <br>
+		        <div class="row" >
+		        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		        <div class="col-md-6 col-sm-6 col-xs-6">
+		            <input type="search" ng-model="id" class="form-control" placeholder="เลขทะเบียนรถ">
+		        </div>
+		        <div class="col-md-3 col-sm-3 col-xs-3"></div>
+		        </div>
+		        <br>
+		        <div class="row">
+		            <div class="col-md-5 col-sm-5 col-xs-5"></div>
+		            <div class="col-md-2 col-sm-2 col-xs-3">
+		            	<button type="button" class="btn btn-primary btn-lg" ng-click="search()">ค้นหา</button></div>
+		            <div class="col-md-5 col-sm-5 col-xs-35"></div>
+		        </div>
+		        
+		    </div>
+			</div>
+		</div>
+</body>
+<script src="js/controllers/main.js"></script>
+<script src="js/controllers/carController.js"></script>
+</html>

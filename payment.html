@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+		<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+			<h1 align="center">ค่าที่จอดรถ</h1> <br/>
+			<div ng-app="main" ng-controller="carController">
+					<p>หมายเลขทะเบียนรถ : {{idcar}} </p>
+					<p>หมวดจังหวัด : {{province}} </p>
+					<p>วันเวลาที่เข้า : {{datein}}. </p>
+					<p>วันเวลาที่รถออก : {{dateout}} </p>
+					<p>จำนวนชั่วโมงที่จอด : {{counthr}} ชั่วโมง </p>
+					<p>จำนวนเงินค่าจอด : {{pay}} บาท </p>
+					<h3 align="center">รับเงิน</h3>
+			   		<input type="search" class="form-control" placeholder="จำนวนเงิน"></br>
+			   		<div align="center"><button type="button" class="btn btn-primary">คำนวณเงินทอน</button></div>
+		   		</div>
+		   	</div>
+		</div>
+</body>
+<script src="js/controllers/main.js"></script>
+<!-- <script src="js/remote/car.remote.js"></script>
+<script src="js/model/car.model.js"></script> -->
+<script src="js/controllers/carController.js"></script>
+</html>
